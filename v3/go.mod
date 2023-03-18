@@ -1,4 +1,4 @@
-module github.com/currencyapi-go/v3
+module github.com/imakiri/currencyapi-go/v3
 
 go 1.18
 
