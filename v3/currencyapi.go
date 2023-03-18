@@ -76,7 +76,7 @@ func (c *ClientV3) Status() (*StatusResponse, error) {
 	return response, call(c.key, u.String(), c.httpClient, response)
 }
 
-func (c *ClientV3) Latest(request LatestRequest) (*LatestResponse, error) {
+func (c *ClientV3) Latest(request *LatestRequest) (*LatestResponse, error) {
 	var response = new(LatestResponse)
 	var u = c.baseURL.JoinPath("/latest")
 	var q = u.Query()
